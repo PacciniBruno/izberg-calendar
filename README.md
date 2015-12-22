@@ -1,10 +1,12 @@
 # Izeberg-calendar
 
+inspired by https://github.com/abiee/es6-marionette
+
 Setup
 -----
 Clone the repository and install the dependencies.
 
-    $ git clone https://github.com/abiee/es6-marionette.git my-project
+    $ git clone https://github.com/PacciniBruno/izberg-calendar.git my-project
     $ cd my-project
     $ npm install
     $ gulp serve
