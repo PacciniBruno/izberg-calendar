@@ -1,6 +1,7 @@
+import {Model} from 'backbone';
 import Marionette from 'backbone.marionette';
 import moment from 'moment';
-import { Calendar } from './calendar/scripts/app';
+import Calendar from './calendar/scripts/app';
 
 'use strict';
 
@@ -17,11 +18,16 @@ Promise.all([
 });
 
 function initialize() {
-  var myCalendar = new Calendar({
-    el: '.wrapper-calendar',
-  });
+  var calendarModel = new Model(data.calendar);
+  var serviceOfferModel = new Model(data.serviceOffer);
 
-  myCalendar.start();
+  var myCalendar = new Calendar();
+
+  myCalendar.start({
+    el: '.wrapper-calendar',
+    calendarModel: calendarModel,
+    serviceOfferModel: serviceOfferModel
+  });
 }
 
 function getJSON(url, callback) {

@@ -43,9 +43,8 @@ module.exports = function(config) {
 
     // Cobfigure how to bundle the test files with Browserify
     browserify: {
-      paths: ['app/calendar/scripts'],
       transform: ['babelify', 'hbsfy'],
-      extensions: ['.js', '.hbs']
+      extensions: ['.js', '.hbs', '.json']
     },
 
     // report on console and growl if available

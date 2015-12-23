@@ -1,0 +1,209 @@
+{
+  "availability_calendar": {
+    "id": 259,
+    "pk": 259,
+    "resource_uri": "https://api.sandbox.iceberg.technology/v1/availability_calendar/259/"
+  },
+  "book_before_delay": 172800,
+  "book_before_hour": "12:00:00",
+  "book_before_timezone": "Europe/Paris",
+  "crawling_policy": 1,
+  "currency": null,
+  "custom_quantity_name": "forfait",
+  "default_image": "https://d1uyhd0hkrx9pt.cloudfront.net/assets/images/2015/06/none_71cba319c288e22c157b89f0ca963ffd.JPEG",
+  "delivery_areas": [
+    {
+      "id": 15,
+      "pk": 15,
+      "resource_uri": "https://api.sandbox.iceberg.technology/v1/location/15/"
+    },
+    {
+      "id": 160,
+      "pk": 160,
+      "resource_uri": "https://api.sandbox.iceberg.technology/v1/location/160/"
+    }
+  ],
+  "departure_location": null,
+  "description": "Après un échange sur votre style, votre budget et vos attentes, votre personal shopper vous guide dans les méandres de la mode parisienne \npour construire avec vous une image parfaitement maîtrisée. \nNos personal shopper sont tous des professionnels de la mode et des tendances, dotés d’une double compétence\nsoit en stylisme, soit en conseil en image, soit en blogging reconnu.",
+  "destination_location": null,
+  "discounted": false,
+  "external_id": null,
+  "external_url": null,
+  "from_list": false,
+  "id": 96,
+  "images": [
+    {
+      "display_mode": 0,
+      "height": 1000,
+      "id": 361,
+      "order": 0,
+      "resource_uri": "https://api.sandbox.iceberg.technology/v1/image/361/",
+      "url": "https://d1uyhd0hkrx9pt.cloudfront.net/assets/images/2015/06/none_71cba319c288e22c157b89f0ca963ffd.JPEG",
+      "width": 1000
+    },
+    {
+      "display_mode": 0,
+      "height": 1000,
+      "id": 929,
+      "order": 0,
+      "resource_uri": "https://api.sandbox.iceberg.technology/v1/image/929/",
+      "url": "https://d1uyhd0hkrx9pt.cloudfront.net/assets/images/2015/07/none_71cba319c288e22c157b89f0ca963ffd.JPEG",
+      "width": 1000
+    }
+  ],
+  "is_abstract": false,
+  "language": "fr",
+  "last_crawled": "2015-10-29T11:50:03+01:00",
+  "last_modified": "2015-10-29T11:50:03+01:00",
+  "max_order_quantity": 4,
+  "max_people_number": 4,
+  "max_service_duration": null,
+  "merchant": {
+    "id": 830,
+    "name": "PARISIAN STYLE",
+    "pk": 830,
+    "resource_uri": "https://api.sandbox.iceberg.technology/v1/merchant/830/",
+    "slug": "parisian-style"
+  },
+  "merchant_opening_hours": {
+    "id": 185,
+    "pk": 185,
+    "resource_uri": "https://api.sandbox.iceberg.technology/v1/availability_calendar/185/"
+  },
+  "meta": {
+    "req_stats": {
+      "ET": 0.23742413520812988
+    }
+  },
+  "min_order_quantity": 1,
+  "min_people_number": 1,
+  "min_service_duration": null,
+  "name": "Personal Shopping Style \n",
+  "options": [
+    {
+      "external_id": "1232-0003-1",
+      "external_url": null,
+      "id": 571,
+      "is_person_specific": false,
+      "is_quantity_specific": false,
+      "is_required": false,
+      "language": "fr",
+      "last_modified": "2015-10-29T10:09:19+01:00",
+      "max_option_answer": null,
+      "min_option_answer": null,
+      "name": "Langue souhaitée du personal shopper",
+      "option_answer_choices": [
+        "Français",
+        "Anglais",
+        "Chinois",
+        "Japonais",
+        "Coréen",
+        "Russe",
+        "Italien",
+        "Portugais",
+        "Espagnol"
+      ],
+      "option_id": 571,
+      "option_type": "str",
+      "resource_uri": "https://api.sandbox.iceberg.technology/v1/option/571/",
+      "status": "active"
+    },
+    {
+      "external_id": "1232-0003-2",
+      "external_url": null,
+      "id": 572,
+      "is_person_specific": false,
+      "is_quantity_specific": false,
+      "is_required": false,
+      "language": "fr",
+      "last_modified": "2015-09-17T15:41:33+02:00",
+      "max_option_answer": null,
+      "min_option_answer": null,
+      "name": "Style vestimentaire recherché / Articles Recherchés",
+      "option_answer_choices": [],
+      "option_id": 572,
+      "option_type": "str",
+      "resource_uri": "https://api.sandbox.iceberg.technology/v1/option/572/",
+      "status": "active"
+    },
+    {
+      "external_id": "1232-0003-3",
+      "external_url": null,
+      "id": 573,
+      "is_person_specific": false,
+      "is_quantity_specific": false,
+      "is_required": false,
+      "language": "fr",
+      "last_modified": "2015-09-17T15:41:33+02:00",
+      "max_option_answer": null,
+      "min_option_answer": null,
+      "name": "Taille de vêtements ( haut / bas / chaussures)",
+      "option_answer_choices": [],
+      "option_id": 573,
+      "option_type": "str",
+      "resource_uri": "https://api.sandbox.iceberg.technology/v1/option/573/",
+      "status": "active"
+    },
+    {
+      "external_id": "1232-0003-4",
+      "external_url": null,
+      "id": 574,
+      "is_person_specific": false,
+      "is_quantity_specific": false,
+      "is_required": false,
+      "language": "fr",
+      "last_modified": "2015-09-17T15:41:33+02:00",
+      "max_option_answer": null,
+      "min_option_answer": null,
+      "name": "Marques habituellement achetées",
+      "option_answer_choices": [],
+      "option_id": 574,
+      "option_type": "str",
+      "resource_uri": "https://api.sandbox.iceberg.technology/v1/option/574/",
+      "status": "active"
+    },
+    {
+      "external_id": "1232-0003-5",
+      "external_url": null,
+      "id": 575,
+      "is_person_specific": false,
+      "is_quantity_specific": false,
+      "is_required": false,
+      "language": "fr",
+      "last_modified": "2015-09-17T15:41:33+02:00",
+      "max_option_answer": null,
+      "min_option_answer": null,
+      "name": "Budget Shopping",
+      "option_answer_choices": [],
+      "option_id": 575,
+      "option_type": "str",
+      "resource_uri": "https://api.sandbox.iceberg.technology/v1/option/575/",
+      "status": "active"
+    }
+  ],
+  "previous_price": "295.000000",
+  "previous_price_with_vat": "295.000000",
+  "previous_price_without_vat": "295.000000",
+  "price": "295.000000",
+  "price_with_vat": "295.000000",
+  "price_without_vat": "295.000000",
+  "product": {
+    "id": 43581,
+    "pk": 43581,
+    "resource_uri": "https://api.sandbox.iceberg.technology/v1/product/43581/"
+  },
+  "requested_language": "fr",
+  "resource_uri": "https://api.sandbox.iceberg.technology/v1/service_offer/96/",
+  "sales_channels": [],
+  "service_duration": 14400,
+  "service_duration_choices": [],
+  "short_description": "Passez une demi-journée \navec un personal shopper \net optimisez votre budget shopping.",
+  "sku": "1232-0003",
+  "slot_offset": null,
+  "status": "active",
+  "status_localized": "Offre Active",
+  "stock": null,
+  "variations": [],
+  "with_delivery": false,
+  "wrapping": null
+}

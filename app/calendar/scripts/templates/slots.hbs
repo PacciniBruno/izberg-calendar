@@ -1,0 +1,9 @@
+{{#each timeDivision}}
+<tr>
+  <td>{{timeStamp}}</td>
+
+  {{#each dayDivision}}
+    {{#if slot}}<td class="slot-empty"></td>{{/if}}
+  {{/each}}
+</tr>
+{{/each}}
