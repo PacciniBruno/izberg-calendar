@@ -8,10 +8,11 @@ var SlotsView = CollectionView.extend({
   template: slotsTemplate,
 
   initialize: function(options) {
-
   },
 
   filter: function(child, index, collection) {
+    //TODO
+
     // Only care for slots in the week range we're in
   },
 });

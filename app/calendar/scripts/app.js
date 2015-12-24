@@ -7,7 +7,11 @@ import AppLayout from './views/appLayoutView';
 import CalendarModel from './models/calendarModel';
 import SlotsCollection from './collections/slotsCollection';
 
-'use strict';
+// 'use strict';
+/*
+  Strict by default in ES6
+  To be explicit, ES6 modules are always in strict mode. So if you are writing scripts (which do not allow import and export and module statements), you can stay in sloppy mode, but if you are writing modules, then you are opting in to strict mode automatically.
+ */
 
 var globalChannel = Radio.channel('calendar');
 
@@ -26,7 +30,7 @@ var Calendar = Application.extend({
 
     // Set the current TimeFrame to the first 7 days.
     // Add that information to the calendar model
-    var currentFrom = from_date
+    var currentFrom = from_date;
     var currentTo = moment(from_date).add(7, 'days').format();
 
     var calendarModel = new CalendarModel({

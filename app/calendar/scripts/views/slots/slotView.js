@@ -21,10 +21,12 @@ var SlotView = ItemView.extend({
   },
 
   onSetUnavailable: function() {
+    // TODO
     // Make necessary DOM Manipulation
   },
 
   onSlotSelect: function() {
+    // TODO
     // Make necessary DOM Manipulation
   },
 

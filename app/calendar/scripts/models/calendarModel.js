@@ -9,6 +9,8 @@ var CalendarModel = Model.extend({
   },
 
   onSetWeek: function(week) {
+    //TODO
+
     if (week === 'prev' && this.get('fromDate') !== 'currentFrom') {
       // set week to a week earlier
     }

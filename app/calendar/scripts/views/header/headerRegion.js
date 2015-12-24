@@ -6,7 +6,7 @@ var globalChannel = Radio.channel('calendar');
 
 var HeaderRegion = Region.extend({
   initialize: function(options) {
-    this.listenTo(globalChannel, 'rendered', () => { this.onLayoutRendered(options) });
+    this.listenTo(globalChannel, 'rendered', () => { this.onLayoutRendered(options); });
   },
 
   onLayoutRendered: function(options) {
