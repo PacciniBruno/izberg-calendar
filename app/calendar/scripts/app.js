@@ -12,7 +12,7 @@ var globalChannel = Radio.channel('calendar');
 
 var Calendar = Application.extend({
   initialize() {
-    this.on('start', this.onStart);
+
   },
 
   onStart(options) {

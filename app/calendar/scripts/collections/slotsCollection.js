@@ -1,11 +1,14 @@
 import {Collection} from 'backbone';
+import SlotsRowModel from '../models/slotsRowModel';
 
 var SlotsCollection = Collection.extend({
 
   comparator: 'starts_on',
 
-  initialize: function(options) {
+  model: SlotsRowModel,
 
+  initialize: function(options) {
+    // On initialisation, parse the data into rows ?
   },
 });
 

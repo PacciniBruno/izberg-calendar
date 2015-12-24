@@ -11,6 +11,15 @@ var HeaderView = ItemView.extend({
     this.listenTo(this.model, 'change:weekDays', this.render);
   },
 
+  // Hacky way ok getting rid of the wrapping div. Might impact performances
+  onRender: function () {
+    // Get rid of the wrapping-div.
+    this.$el = this.$el.children();
+    // Unwrap the element to prevent infinitely
+    // nesting elements during re-render.
+    this.$el.unwrap();
+    this.setElement(this.$el);
+  },
 });
 
 export default HeaderView;

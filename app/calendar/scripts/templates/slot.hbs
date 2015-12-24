@@ -1,3 +1,6 @@
-<!-- TODO -->
+{{#if isAvailable}}
+<div class="slot-available"></div>
+{{else}}
+<div class="slot-unavailable">{{starts_on}}</div><!-- Show start timeStamp for testing -->
+{{/if}}
 
-<div class="slot--booked">{{starts_on}}</div>

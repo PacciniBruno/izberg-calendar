@@ -1,9 +1,10 @@
-{{#each timeDivision}}
+{{#each hours}}
 <tr>
-  <td>{{timeStamp}}</td>
-
-  {{#each dayDivision}}
-    {{#if slot}}<td class="slot-empty"></td>{{/if}}
-  {{/each}}
+    <td>{{this}}</td>
+    {{#each weekDays}}
+    <td class="">
+    <!-- Here will go the slots -->
+    </td><!-- TODO: set coordinates in the className or data-attribute using hour/weekDay tuples -->
+    {{/each}}
 </tr>
 {{/each}}

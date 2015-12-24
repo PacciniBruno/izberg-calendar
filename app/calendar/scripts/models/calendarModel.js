@@ -5,6 +5,11 @@ import moment from 'moment';
 var globalChannel = Radio.channel('calendar');
 
 var CalendarModel = Model.extend({
+
+  defaults: {
+    hours: [10, 11, 12, 13, 14, 15, 16, 17]
+  },
+
   initialize: function() {
     this.listenTo(this, 'setWeek', this.onSetWeek);
 

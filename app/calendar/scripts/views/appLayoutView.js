@@ -13,6 +13,7 @@ var AppLayout = LayoutView.extend({
 
   initialize: function(options) {
     this.model = options.calendarModel;
+    this.collection = options.slotsCollection;
   },
 
   regions: (options) => ({
