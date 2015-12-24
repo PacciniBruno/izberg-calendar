@@ -7,7 +7,7 @@ var slotsChannel = Radio.channel('calendarSlots');
 
 var SlotsRegion = Region.extend({
   initialize: function(options) {
-    this.listenTo(globalChannel, 'rendered', () => { this.onLayoutRendered(options) });
+    this.listenTo(globalChannel, 'rendered', () => { this.onLayoutRendered(options); });
   },
 
   onLayoutRendered: function(options) {

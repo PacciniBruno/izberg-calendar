@@ -13,7 +13,6 @@ var SlotView = ItemView.extend({
   },
 
   initialize: function(options) {
-
   },
 
   onClickPrevious: function() {
