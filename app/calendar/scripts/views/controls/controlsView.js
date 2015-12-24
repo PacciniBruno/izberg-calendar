@@ -16,11 +16,11 @@ var SlotView = ItemView.extend({
   },
 
   onClickPrevious: function() {
-    globalChannel.trigger('setWeek', 'prev');
+    this.model.trigger('setWeek', 'prev');
   },
 
   onClickNext: function() {
-    globalChannel.trigger('setWeek', 'next');
+    this.model.trigger('setWeek', 'next');
   },
 
 });

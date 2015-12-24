@@ -12,7 +12,8 @@ var SlotsRegion = Region.extend({
 
   onLayoutRendered: function(options) {
     this.show(new SlotsView({
-      collection: options.collection
+      collection: options.collection,
+      model: options.model
     }));
   }
 });

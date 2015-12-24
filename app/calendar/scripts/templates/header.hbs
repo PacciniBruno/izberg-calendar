@@ -1,22 +1,9 @@
-<!--
-
-    It does not work because your model attributes are something like:
-
-    currentFrom: "2015-11-02T08:57:36.906000+01:00"
-    currentTo: "2015-11-09T08:57:36+01:00"
-    fromDate: "2015-11-02T08:57:36.906000+01:00"
-    serviceDuration: 14400
-    toDate: "2015-12-10T00:00:00+01:00"
-
--->
-
-
 <tr>
   <th>&nbsp;</th><!-- Non-breaking space -->
-  {{#each date}}
+  {{#each weekDays}}
   <th class="header-date">
-    <h4 class="header-date-day">{{weekDay}}</h4>
-    <p class="header-date-name">{{dateName}}</p>
+    <h4 class="header-date-day">{{formatDate this "dddd"}}</h4>
+    <p class="header-date-name">{{formatDate this "D MMMM YYYY"}}</p>
   </th>
   {{/each}}
 </tr>

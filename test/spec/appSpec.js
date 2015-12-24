@@ -3,8 +3,6 @@ import $ from 'jquery';
 import test from 'tape';
 import {Model} from 'backbone';
 
-'use strict';
-
 function initializeCalendar() {
   var calendarModel = new Model(data.calendar);
   var serviceOfferModel = new Model(data.serviceOffer);

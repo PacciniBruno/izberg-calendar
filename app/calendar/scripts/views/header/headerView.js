@@ -8,7 +8,7 @@ var HeaderView = ItemView.extend({
   template: headerTemplate,
 
   initialize: function(options) {
-    console.log(options);
+    this.listenTo(this.model, 'change:weekDays', this.render);
   },
 
 });

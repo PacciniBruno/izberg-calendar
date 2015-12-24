@@ -6,12 +6,7 @@ import moment from 'moment';
 import AppLayout from './views/appLayoutView';
 import CalendarModel from './models/calendarModel';
 import SlotsCollection from './collections/slotsCollection';
-
-// 'use strict';
-/*
-  Strict by default in ES6
-  To be explicit, ES6 modules are always in strict mode. So if you are writing scripts (which do not allow import and export and module statements), you can stay in sloppy mode, but if you are writing modules, then you are opting in to strict mode automatically.
- */
+import HandlebarsHelpers from './handlebarsHelpers';
 
 var globalChannel = Radio.channel('calendar');
 

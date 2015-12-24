@@ -61,14 +61,18 @@ gulp.task('browserify:dist', function () {
 
 // Compile and automatically prefix stylesheets
 gulp.task('styles', function () {
-  return gulp.src(['app/styles/main.css', 'app/styles/normalize.css'])
-    .pipe($.sourcemaps.init())
-    .pipe($.postcss([
-      require('autoprefixer')({browsers: ['last 1 version']})
-    ]))
-    .pipe($.sourcemaps.write())
-    .pipe(gulp.dest('.tmp/styles'))
-    .pipe(reload({ stream: true }));
+  return gulp.src([
+    'app/styles/main.css',
+    'app/styles/normalize.css',
+    'app/styles/bootstrap.css'
+  ])
+  .pipe($.sourcemaps.init())
+  .pipe($.postcss([
+    require('autoprefixer')({browsers: ['last 1 version']})
+  ]))
+  .pipe($.sourcemaps.write())
+  .pipe(gulp.dest('.tmp/styles'))
+  .pipe(reload({ stream: true }));
 });
 
 // Scan your HTML for assets & optimize them

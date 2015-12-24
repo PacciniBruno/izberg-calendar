@@ -19,7 +19,8 @@ var AppLayout = LayoutView.extend({
     slots: {
       selector: '.wrapper-slots',
       regionClass: SlotsRegion,
-      collection: options.slotsCollection
+      collection: options.slotsCollection,
+      model: options.calendarModel
     },
     header: {
       selector: '.wrapper-header',
